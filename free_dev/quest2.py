@@ -9,10 +9,9 @@ num_sec = gera()
 num = int(input('Digite um numero -> '))
 
 while num != num_sec:
-	if num > num_sec:
-		print('Numero muito alto!')
-	else: 
-		print('Numero muito baixo!')
+	print ('Numero muito alto!' if num > num_sec else 'Numero muito baixo!')
+	
 	num = int(input('Digite um numero -> '))
 
 print('Parabens voce acertou!')
+print('Numero secreto ->', num_sec)
